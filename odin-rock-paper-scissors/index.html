@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading--primary">Rock Paper Scissors</h1>
+    </header>
+    <section class="game">
+      <h3 class="game__result">Choose a button</h3>
+      <p class="game__desc">This game will end after 5 rounds</p>
+      <div class="game__container">
+        <div class="human">
+          <p class="human__text">?</p>
+          <p class="human__score">Human: <span id="humanScore"></span></p>
+        </div>
+        <div class="computer">
+          <p class="computer__text">?</p>
+          <p class="computer__score">
+            Computer: <span id="computerScore"></span>
+          </p>
+        </div>
+      </div>
+      <div class="game__controls">
+        <button class="game__button" id="rock">✊🏻</button>
+        <button class="game__button" id="paper">✋🏻</button>
+        <button class="game__button" id="scissors">✌🏻</button>
+      </div>
+    </section>
+    <div class="reset hidden"><button>Reset</button></div>
+    <footer class="footer">Copyright &copy; Piyush Yadav 2024</footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+:root {
+  --color-primary: #2b6434;
+  --color-secondary: #1c3d21;
+  --color-tertiary: #4caf50;
+  --text-primary: #f7f7f7;
+  --text-secondary: #b4dc23;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background-color: var(--color-secondary);
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.heading--primary {
+  font-size: 6.4rem;
+  color: var(--text-secondary);
+  font-family: Lobster, sans-serif;
+}
+
+.game {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.game__result {
+  font-size: 3.2rem;
+}
+
+.game__desc {
+  font-size: 1.8rem;
+}
+
+.game__container {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.human,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.human__text,
+.computer__text {
+  font-size: 6.4rem;
+}
+
+.game__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game__button {
+  font-size: 6.4rem;
+  padding: 3rem 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-tertiary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.reset button {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 3.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2rem;
+}
