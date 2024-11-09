@@ -80,9 +80,9 @@ const playRound = (choice) => {
 
   if (round >= 5) {
     reset.classList.remove("hidden");
-    rock.setAttribute("disabled");
-    paper.setAttribute("disabled");
-    scissors.setAttribute("disabled");
+    rock.disabled = true;
+    paper.disabled = true;
+    scissors.disabled = true;
     if (humanScore > computerScore) {
       gameResult.textContent = "You win the game!";
       gameDesc.textContent = `Final score - You: ${humanScore}, Computer: ${computerScore}`;
