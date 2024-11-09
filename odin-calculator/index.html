@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading--primary">Calculator</h1>
+      <p class="copyright">&copy; 2024 Piyush Yadav</p>
+    </header>
+    <main class="calculator">
+      <p class="display"></p>
+      <div class="buttons">
+        <!--* Row 1 -->
+
+        <button id="seven" class="number">7</button>
+        <button id="eight" class="number">8</button>
+        <button id="nine" class="number">9</button>
+        <button id="divide" class="operator">÷</button>
+
+        <!--* Row 2 -->
+
+        <button id="four" class="number">4</button>
+        <button id="five" class="number">5</button>
+        <button id="six" class="number">6</button>
+        <button id="multiply" class="operator">x</button>
+
+        <!--* Row 3 -->
+
+        <button id="one" class="number">1</button>
+        <button id="two" class="number">2</button>
+        <button id="three" class="number">3</button>
+        <button id="subtract" class="operator">-</button>
+
+        <!--* Row 4 -->
+
+        <button id="zero" class="number">0</button>
+        <button id="decimal" class="number">.</button>
+        <button id="add" class="operator">+</button>
+
+        <!--* Row 5 -->
+
+        <button id="equals" class="equals">=</button>
+
+        <!--* Row 6 -->
+
+        <button id="clear" class="clear">clear</button>
+        <button id="backspace" class="backspace">&#8592;</button>
+      </div>
+      <div class="history"><p>History:</p></div>
+    </main>
+  </body>
+</html>
