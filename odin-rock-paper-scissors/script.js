@@ -105,9 +105,9 @@ const gameReset = () => {
   humanScoreText.textContent = humanScore;
   computerScoreText.textContent = computerScore;
   round = 0;
-  rock.removeAttribute("disabled");
-  paper.removeAttribute("disabled");
-  scissors.removeAttribute("disabled");
+  rock.disabled = false;
+  paper.disabled = false;
+  scissors.disabled = false;
   reset.classList.add("hidden");
 };
 
